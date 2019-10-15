@@ -9,7 +9,7 @@ public class Country implements Comparable <Country>{
     public enum Continent{
         Евразия ,
         Южная_Америка ,
-        Северная_Америка,
+
 
 
 

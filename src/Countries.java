@@ -52,7 +52,6 @@ public class Countries {
         for (int i = 0; i < list.length; i++) {
             if (list[i].getContinent().equals(cont)) {
                 System.arraycopy(list, 0, name, 0, list.length);
-                System.out.println(name[i].toString());
 
             }
 

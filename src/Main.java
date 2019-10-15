@@ -49,7 +49,6 @@ public class Main {
         java.lang.String cap = in.next();
         System.out.println("Введите Площадь : ");
         int sortArea = in.nextInt();
-        System.out.println("Введите континент: ");
         java.lang.String cont = in.next();*/
     }
 

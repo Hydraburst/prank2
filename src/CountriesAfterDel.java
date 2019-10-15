@@ -3,9 +3,6 @@ import java.util.Arrays;
 public class CountriesAfterDel extends Countries {
     public CountriesAfterDel[] listAfterDel;
 
-    public CountriesAfterDel[] getListAfterDel() {
-        return listAfterDel;
-    }
 
     public CountriesAfterDel(int length) {
         this.listAfterDel = new CountriesAfterDel[length];
