@@ -1,27 +1,28 @@
-public class Country implements Comparable <Country>{
+import java.util.Comparator;
+
+
+public class Country {
     String name;
     String capital;
     String continent;
     int population;
-    double area;
+    int area;
+    int id;
 
     static final String FORMAT = "%6.2f";
-    public enum Continent{
-        Евразия ,
-        Южная_Америка ,
 
 
-
-
-    }
-
-
-    public Country(String name, String capital, String continent, int population, double area) {
+    public Country(int id, String name, String capital, String continent, int population, int area) {
         this.name = name;
         this.capital = capital;
         this.continent = continent;
         this.population = population;
         this.area = area;
+        this.id = id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getContinent() {
@@ -40,18 +41,21 @@ public class Country implements Comparable <Country>{
         return capital;
     }
 
+    public double getArea() {
+        return area;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public String toString() {
-        return  "Страна: " + this.name + "     |" +
-                "Континент: " + this.continent +"     |"+
-                "Столица: "+  this.capital + "     |"+
-                "Численность: "+ this.population + "     |" +
-                "Площадь: " + String.format("%6.2f",this.area) ;
+        return "Страна: " + this.name + "     |" +
+                "Континент: " + this.continent + "     |" +
+                "Столица: " + this.capital + "     |" +
+                "Численность: " + this.population + "     |" +
+                "Площадь: " + this.area + '\n';
     }
-
-    public int compareTo(Country o) {
-        int result = toString().compareTo(o.toString());
-        return result;
-    }
-
-
 }
+
+
